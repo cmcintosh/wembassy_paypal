@@ -1,8 +1,6 @@
-name: Paypal support for Commerce
+name: Wembassy Paypal
 type: module
-description: 'Provides paypal support for commerce, developed by Chris McIntosh <cmcintosh@wembassy.com>'
+description: 'Provides paypal support for Drupal 8, developed by Chris McIntosh <cmcintosh@wembassy.com>'
 package: Commerce Wembassy
 core: 8.x
 configure: commerce.admin_commerce
-dependencies:
-  - commerce:commerce_payment

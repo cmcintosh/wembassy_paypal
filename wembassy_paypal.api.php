@@ -3,6 +3,7 @@
 /**
 * @file
 * Documents hooks provided by the Wembassy Paypal modules.
+* We may / may not keep this.
 */
 
 

@@ -1,11 +1,9 @@
 # Define an always accessible path to receive IPNs.
 wembassy_paypal_ipn:
   path: 'paypal/ipn'
+  methods: [POST]
   defaults:
     _controller: '\Drupal\wembassy_paypal\Controller\PaypalIPN::ipn_link'
-
-# Define an additional IPN path for payment method specific.
-wembassy_paypal_ipn_payment_method:
-  path: 'paypal/ipn/{payment_method}'
-  defaults:
-    _controller: '\Drupal\wembassy_paypal\Controller\PaypalIPN::payment_method_link'
+  requirements:
+    _access:
+      'TRUE'
